@@ -1,0 +1,43 @@
+
+input[type="text"] {
+    margin: 0.5em 0;
+    width: 12em;
+}
+
+.searchBar {
+    width: 62%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+#searchQueryInput {
+    width: 40%;
+    height: 2.8rem;
+    background: var(--white-color);
+    outline: none;
+    border: 0.2px solid var(--primary-background-color);
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+#searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#searchQuerySubmit:hover {
+    cursor: pointer;
+}

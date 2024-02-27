@@ -1,0 +1,132 @@
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--white-color);
+    height: 100px;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: var(--primary-background-color);
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    height: 20px;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#icon{
+    align-items: end;
+}
+
+.account_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--primary-background-color);
+    padding: 15px 10px 15px 15px;
+}
+
+.account_login svg{
+    width: 25px;
+    height: 25px;
+}
+
+.account_login p{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.signup-button {
+    background-color: var(--white-color);
+    color: var(--primary-background-color);
+    font-size: 18px;
+    border: 2px solid var(--primary-background-color);
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    padding: 18px 30px;
+}
+
+.header-nav button{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 10px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    border: 2px solid var(--primary-background-color);
+    color: var(--primary-background-color);
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.nav-menu-item{
+    display: flex;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-menu-item p{
+    margin-left: 5px;
+}
+
+.nav-menu-item svg{
+    width: 25px;
+    height: 25px;
+}
+
+.cart{
+    margin-bottom: 30px;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    background-color: var(--primary-background-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 1;
+    font-family: sans-serif;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+}
