@@ -1,0 +1,63 @@
+.confirmation_table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.confirmation_table th,
+.confirmation_table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.confirmation_th {
+    text-align: center !important;
+}
+
+.total_last {
+    background-color: lightgray;
+}
+
+.total_surcharge {
+    background-color: rgba(211, 211, 211, 0.41);
+}
+
+.total_subtotal {
+    background-color: rgba(211, 211, 211, 0.18);
+}
+
+.confirmation_total {
+    text-align: left !important;
+}
+
+.confirmation_td:nth-child(1) {
+    text-align: center;
+}
+
+.confirmation_td:nth-child(2) {
+    text-align: center;
+}
+
+.confirmation_td:nth-child(3) {
+    text-align: center;
+}
+
+.confirmation_th {
+    text-align: left;
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.confirmation_th_book {
+    text-align: left !important;
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.confirmation_td_title {
+    text-align: left !important;
+}

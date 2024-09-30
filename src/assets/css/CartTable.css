@@ -1,0 +1,265 @@
+.main-cart-page {
+    margin: 0 200px 120px 200px;
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: fit-content;
+}
+
+.cart-page{
+    margin-top: 300px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 2em;
+    flex-direction: column
+}
+
+.cart-table {
+    display: grid;
+    grid-template-columns: max-content minmax(30em, 20em) repeat(3, max-content);
+    row-gap: 1em;
+    margin: 120px auto 20px auto;
+}
+
+.cart {
+    display: contents;
+}
+
+.cart > li {
+    display: contents;
+}
+
+.delete,
+.clear-cart{
+    height: min-content;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.delete {
+    color: var(--neutral-color);
+    margin-right: 0.25em;
+    background: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.delete:hover {
+    color: var(--primary-background-color);
+    background: none;
+    text-decoration: underline;
+}
+
+.clear-cart h6 {
+    margin: 0;
+    text-decoration: underline;
+}
+
+.table-heading {
+    background-color: var(--secondary-background-color);
+    color: white;
+}
+
+.table-heading > * {
+    background-color: var(--secondary-background-color);
+    padding: 0.5em 1em;
+}
+
+.heading-book {
+    grid-column: 1 / 3;
+}
+
+.heading-price {
+    grid-column: 3 / 4;
+    text-align: center;
+}
+
+.heading-quantity {
+    grid-column: 4 / 5;
+    text-align: center;
+}
+
+.heading-subtotal {
+    text-align: center;
+    grid-column: 5 / 6;
+}
+
+.cart-book-title {
+    font-size: 16px;
+    font-weight: bold;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.cart-book-author {
+    font-size: 14px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    margin-top: 3px;
+}
+
+.cart-book-image {
+    padding: 0 1em;
+}
+
+.cart-book-image > * {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.cart img {
+    display: block;
+    width: 100px;
+    height: 140px;
+}
+
+.rect {
+    background-color: var(--secondary-background-color);
+}
+
+.narrow-rect {
+    width: 75px;
+    height: 100px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.wide-rect {
+    width: 125px;
+    height: 100px;
+}
+
+.quantity {
+    width: 120px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.cart-book-price,
+.cart-book-quantity,
+.cart-book-subtotal {
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtotal {
+    margin-right: 5px;
+}
+
+.line-sep {
+    height: 2px;
+    background-color: lightgray;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.icon-button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.inc-button,
+.dec-button {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin-right: 0.25em;
+}
+
+.dec-button:hover,
+.inc-button:hover {
+    color: var(--primary-background-color);
+    background: none;
+}
+
+input[type="number"] {
+    width: 4em;
+}
+
+.row-line {
+    border-bottom: 1px solid black;
+}
+
+.cart-table-bottom-section {
+    display: flex
+}
+
+.total_value {
+    margin-left: 0.3em;
+}
+
+.buttons-cart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.checkout-button {
+    background-color: var(--primary-background-color);
+    color: var(--white-color);
+    padding: 15px 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    white-space: nowrap;
+}
+
+.continue-shopping {
+    background-color: var(--white-color);
+    color: var(--primary-background-color);
+    padding: 12px 54px;
+    font-size: 18px;
+    border: 2px solid var(--primary-background-color);
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    white-space: nowrap;
+    margin: 20px 0 10px 0;
+}
+
+.cart-book-title {
+    word-wrap: break-word;
+    width: 100%;
+}
+
+@media(max-width: 1000px) {
+
+    .main-cart-page {
+        margin: 0 200px 120px 200px;
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: fit-content;
+    }
+
+    .cart-table {
+        display: grid;
+        grid-template-columns: max-content minmax(20em, 10em) repeat(3, max-content);
+        row-gap: 1em;
+        margin: 200px auto 20px auto;
+    }
+
+    .buttons-cart {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 0.25em;
+    }
+}
